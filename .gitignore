@@ -12,6 +12,9 @@ target/
 *.iml
 *.ipr
 
+### Tomcat files ###
+.smarttomcat/
+
 ### Eclipse ###
 .apt_generated
 .classpath
