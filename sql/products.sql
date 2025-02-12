@@ -1,12 +1,12 @@
 CREATE DATABASE 'stock-manager';
 
 CREATE TABLE products(
-    id INT NOT NULL AUTO_ENCREMENT PRIMARY KEY;
-    name NOT NULL VARCHAR(255);
-    description NULL TEXT;
-    qty INT NOT NULL;
-    unit_price DECIMAL(10,2) NOT NULL;
-    category VARCHAR(255);
+    id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    description TEXT NULL,
+    qty INT NOT NULL,
+    unit_price DECIMAL(10,2) NOT NULL,
+    category VARCHAR(255)
 );
 
 INSERT INTO products
