@@ -1,3 +1,4 @@
+<%@ taglib uri="http://java.sun.com/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,6 +14,10 @@
         <h1 class="text-3xl">Welcome to product manager</h1>
         <a href="#" class="btn bg-blue-700 block py-3 px-6 font-bold text-white rounded">New product</a>
     </div>
+
+    <c:forEach var="product" items="${ productList }">
+        <p><c:out value="${product.name}" /></p>
+    </c:forEach>
 
     <div class="container mx-auto">
         <div class="relative overflow-x-auto">
