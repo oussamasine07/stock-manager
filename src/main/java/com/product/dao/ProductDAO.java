@@ -42,8 +42,6 @@ public class ProductDAO {
         return connection;
     }
 
-
-
     // get all products
     public List<Product> getProducts () {
 
@@ -72,10 +70,26 @@ public class ProductDAO {
         catch (SQLException e ) {
 
         }
-
         return products;
-
     }
 
+    public void insertProduct ( Product product ) {
+        System.out.println(INSERT_INTO_PRODUCTS);
+        try (
+                Connection con = getConnection();
+                PreparedStatement preparedStatement = con.prepareStatement(INSERT_INTO_PRODUCTS);
+        ) {
+            preparedStatement.setString(1, product.getName());
+            preparedStatement.setString(2, product.getDescription());
+            preparedStatement.setInt(3, product.getQty());
+            preparedStatement.setDouble(4, product.getUnitPrice());
+            preparedStatement.setString(5, product.getCategory());
+            System.out.println(preparedStatement);
+            preparedStatement.executeUpdate();
+        }
+        catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
 
 }

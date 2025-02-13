@@ -20,6 +20,15 @@ public class Product {
         this.category = category;
     }
 
+    public Product (String name, String description, int qty, double unitPrice, String category) {
+        super();
+        this.name = name;
+        this.description = description;
+        this.qty = qty;
+        this.unitPrice = unitPrice;
+        this.category = category;
+    }
+
     public int getId () { return this.id; }
 
     public String getName() { return this.name; }

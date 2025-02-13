@@ -28,6 +28,17 @@ public class NewProductServlet extends HttpServlet {
     public void doPost ( HttpServletRequest req, HttpServletResponse res )
         throws ServletException, IOException
     {
+        String name = req.getParameter("name");
+        String description = req.getParameter("description");
+        int qty = Integer.parseInt(req.getParameter("qty"));
+        double unitPrice = Double.parseDouble(req.getParameter("unitPrice"));
+        String category = req.getParameter("category");
+
+        Product newProduct = new Product(name, description, qty, unitPrice, category);
+        System.out.println(newProduct);
+
+        productDAO.insertProduct( newProduct );
+        res.sendRedirect("/");
 
     }
 

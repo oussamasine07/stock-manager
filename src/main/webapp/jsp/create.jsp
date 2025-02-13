@@ -15,22 +15,52 @@
         <a href="/stock-system" class="btn bg-red-700 block py-3 px-6 font-bold text-white rounded">Go back</a>
     </div>
 
-    <div class="container mx-auto">
-
-        <form class="max-w-sm mx-auto">
-              <div class="mb-5">
-                    <label for="username-success" class="block mb-2 text-sm font-medium text-green-700 dark:text-green-500">Product name</label>
-                    <input type="text" class="border border-gray-500" placeholder="Bonnie Green" name="name">
-                    <p class="mt-2 text-sm text-green-600 dark:text-green-500"><span class="font-medium">Alright!</span> Username available!</p>
-              </div>
-              <div>
-                    <label for="username-error" class="block mb-2 text-sm font-medium text-red-700 dark:text-red-500">Your name</label>
-                    <input type="text" id="username-error" class="bg-red-50 border border-red-500 text-red-900 placeholder-red-700 text-sm rounded-lg focus:ring-red-500 dark:bg-gray-700 focus:border-red-500 block w-full p-2.5 dark:text-red-500 dark:placeholder-red-500 dark:border-red-500" placeholder="Bonnie Green">
-                    <p class="mt-2 text-sm text-red-600 dark:text-red-500"><span class="font-medium">Oops!</span> Username already taken!</p>
-              </div>
-        </form>
-
-    </div>
+   <div class="container mx-auto flex justify-center items-center">
+           <form class="w-4/5" action="/stock-system/create" method="POST">
+               <div class="grid grid-cols-10 gap-3">
+                   <div class="w-full col-span-4">
+                       <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-product-name">
+                       Product Name
+                       </label>
+                       <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-300 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-product-name" type="text" placeholder="Product Name" name="name">
+                       <p class="text-red-500 text-xs italic">Please fill out this field.</p>
+                   </div>
+                   <div class="w-full col-span-2">
+                       <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-product-qty">
+                       Quantity
+                       </label>
+                       <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-300 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-product-qty" type="text" placeholder="Product Quantity" name="qty">
+                       <p class="text-red-500 text-xs italic">Please fill out this field.</p>
+                   </div>
+                   <div class="w-full col-span-2">
+                       <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-product-price">
+                       Unit Price
+                       </label>
+                       <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-300 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-product-price" type="text" placeholder="Price" name="unitPrice">
+                       <p class="text-red-500 text-xs italic">Please fill out this field.</p>
+                   </div>
+                   <div class="w-full col-span-2">
+                       <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-product-category">
+                           Product Category
+                       </label>
+                       <select class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="category">
+                           <option value="tech">Technology</option>
+                           <option value="clothing">Clothing</option>
+                           <option value="kitchen">Kitchen</option>
+                       </select>
+                   </div>
+                   <div class="w-full col-span-10">
+                       <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-product-name">
+                       Product Discription
+                       </label>
+                       <textarea class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-300 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-product-name" type="text" placeholder="Product Description"></textarea>
+                   </div>
+                   <div class="w-full col-span-10">
+                        <input class="appearance-none block w-full bg-blue-700 text-white border border-gray-300 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-product-price" type="submit" placeholder="Price" name="unitPrice" value="Create new Product">
+                   </div>
+               </div>
+           </form>
+       </div>
 </body>
 
 </html>
