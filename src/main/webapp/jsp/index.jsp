@@ -1,4 +1,4 @@
-<%@ taglib uri="http://java.sun.com/jstl/core" prefix="c" %>
+<%@ taglib uri="jakarta.tags.core" prefix="c" %>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,9 +15,6 @@
         <a href="#" class="btn bg-blue-700 block py-3 px-6 font-bold text-white rounded">New product</a>
     </div>
 
-    <c:forEach var="product" items="${ productList }">
-        <p><c:out value="${product.name}" /></p>
-    </c:forEach>
 
     <div class="container mx-auto">
         <div class="relative overflow-x-auto">
@@ -44,34 +41,34 @@
                         </th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200">
-                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                            Apple MacBook Pro 17"
-                        </th>
-                        <td class="px-6 py-4">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, porro.
-                        </td>
-                        <td class="px-6 py-4">
-                            20
-                        </td>
-                        <td class="px-6 py-4">
-                            5000.00
-                        </td>
-                        <td class="px-6 py-4">
-                            Technology
-                        </td>
-                        <td class="px-6 py-4">
-                            crud icons
-                        </td>
-                    </tr>
 
+                <tbody>
+                    <c:forEach var="product" items="${ productList }">
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200">
+                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                <c:out value="${product.name}" />
+                            </th>
+                            <td class="px-6 py-4">
+                                <c:out value="${product.description}" />
+                            </td>
+                            <td class="px-6 py-4">
+                                <c:out value="${product.qty}" />
+                            </td>
+                            <td class="px-6 py-4">
+                                <c:out value="${product.unitPrice}" />
+                            </td>
+                            <td class="px-6 py-4">
+                                <c:out value="${product.category}" />
+                            </td>
+                            <td class="px-6 py-4">
+                                crud icons
+                            </td>
+                        </tr>
+                    </c:forEach>
                 </tbody>
             </table>
         </div>
-
     </div>
-
 </body>
 
 </html>
