@@ -8,27 +8,27 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.util.List;
 
-
-public class WelcomeServlet extends HttpServlet {
-
-    private static final long serialVersionUID = 1L;
+public class NewProductServlet extends HttpServlet {
+    private static long serialVersionUID = 1L;
 
     private ProductDAO productDAO;
 
-    public void init () {
+    public void init() {
         productDAO = new ProductDAO();
     }
 
-    public void doGet(HttpServletRequest req, HttpServletResponse res)
+    public void doGet ( HttpServletRequest req, HttpServletResponse  res )
+            throws ServletException, IOException
+    {
+        RequestDispatcher dispatcher = req.getRequestDispatcher("jsp/create.jsp");
+        dispatcher.forward(req, res);
+    }
+
+    public void doPost ( HttpServletRequest req, HttpServletResponse res )
         throws ServletException, IOException
     {
-        List<Product> productList = productDAO.getProducts();
 
-        req.setAttribute("productList", productList);
-        RequestDispatcher dispatcher = req.getRequestDispatcher("jsp/index.jsp");
-        dispatcher.forward(req, res);
     }
 
 }

@@ -14,4 +14,12 @@
     <url-pattern>/</url-pattern>
   </servlet-mapping>
 
+  <servlet>
+    <servlet-name>NewProductServlet</servlet-name>
+    <servlet-class>com.product.controllers.NewProductServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>NewProductServlet</servlet-name>
+    <url-pattern>/create</url-pattern>
+  </servlet-mapping>
 </web-app>

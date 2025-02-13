@@ -5,10 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4b767341-4e99-4653-a4cf-d23d2b87ff25" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/jakarta.servlet.jsp.jstl-3.0.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/jakarta.servlet.jsp.jstl-api-3.0.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/product/controllers/NewProductServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/jsp/create.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/jakarta.servlet.jsp.jstl-2.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/stock-system/com/product/controllers/WelcomeServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/stock-system/com/product/controllers/WelcomeServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/product/controllers/WelcomeServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/product/controllers/WelcomeServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
