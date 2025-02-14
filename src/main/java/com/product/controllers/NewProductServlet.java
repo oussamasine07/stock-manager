@@ -35,10 +35,10 @@ public class NewProductServlet extends HttpServlet {
         String category = req.getParameter("category");
 
         Product newProduct = new Product(name, description, qty, unitPrice, category);
-        System.out.println(newProduct);
+        System.out.println(newProduct.getName());
 
         productDAO.insertProduct( newProduct );
-        res.sendRedirect("/");
+        res.sendRedirect("/stock-system");
 
     }
 

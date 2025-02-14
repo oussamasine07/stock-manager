@@ -6,9 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="4b767341-4e99-4653-a4cf-d23d2b87ff25" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/stock-system/com/product/controllers/NewProductServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/stock-system/com/product/controllers/NewProductServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/stock-system/com/product/dao/ProductDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/stock-system/com/product/dao/ProductDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/stock-system/com/product/model/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/stock-system/com/product/model/Product.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/product/controllers/NewProductServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/product/controllers/NewProductServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/product/dao/ProductDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/product/dao/ProductDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/product/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/product/model/Product.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/create.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/create.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

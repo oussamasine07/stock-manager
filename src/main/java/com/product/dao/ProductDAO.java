@@ -17,7 +17,7 @@ public class ProductDAO {
     private String jdbcUsername = "root";
     private String jdbcPassword = "Climbing0673!";
 
-    private static String INSERT_INTO_PRODUCTS = "INSERT INTO products (name, description, qty, unitPrice, category) VALUES ('Tablet', 'qldkfdlf adjfha fjahf fajh adoha jhad foah', 10, 400, 'tech');";
+    private static String INSERT_INTO_PRODUCTS = "INSERT INTO products (name, description, qty, unitPrice, category) VALUES (?, ?, ?, ?, ?);";
     private static String GET_PRODUCT_BY_ID = "SELECT * FROM products WHERE id = ?;";
     private static String LIST_PRODUCTS = "SELECT * FROM products;";
     private static String UPDATE_PRODUCT = "UPDATE products SET name = ? SET description = ? SET qty = ? SET unitPrice = ? SET category = ? WHERE id = ?;";
