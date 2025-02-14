@@ -61,7 +61,7 @@
                                 <c:out value="${product.category}" />
                             </td>
                             <td class="px-6 py-4">
-                                crud icons
+                                <a href="/stock-system/update?id=<c:out value='${product.id}' />">Edit</a>
                             </td>
                         </tr>
                     </c:forEach>

@@ -22,4 +22,14 @@
     <servlet-name>NewProductServlet</servlet-name>
     <url-pattern>/create</url-pattern>
   </servlet-mapping>
+
+  <servlet>
+    <servlet-name>UpdateProductServlet</servlet-name>
+    <servlet-class>com.product.controllers.UpdateProductServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateProductServlet</servlet-name>
+    <url-pattern>/update</url-pattern>
+  </servlet-mapping>
+
 </web-app>
