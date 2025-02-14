@@ -139,4 +139,18 @@ public class ProductDAO {
         }
     }
 
+    public void deleteProduct ( int productId ) {
+        System.out.println(DELETE_PRODUCT);
+        try (
+           Connection con = getConnection();
+           PreparedStatement preparedStatement = con.prepareStatement(DELETE_PRODUCT);
+        ) {
+            preparedStatement.setInt(1, productId);
+            preparedStatement.executeUpdate();
+        }
+        catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
 }

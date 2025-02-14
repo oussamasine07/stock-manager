@@ -32,4 +32,13 @@
     <url-pattern>/update</url-pattern>
   </servlet-mapping>
 
+  <servlet>
+    <servlet-name>DeleteProductServlet</servlet-name>
+    <servlet-class>com.product.controllers.DeleteProductServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteProductServlet</servlet-name>
+    <url-pattern>/delete</url-pattern>
+  </servlet-mapping>
+
 </web-app>

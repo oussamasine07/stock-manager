@@ -62,6 +62,9 @@
                             </td>
                             <td class="px-6 py-4">
                                 <a href="/stock-system/update?id=<c:out value='${product.id}' />">Edit</a>
+                                <form action="/stock-system/delete?id=<c:out value='${product.id}' />" method="POST">
+                                    <button type="submit">Delete</button>
+                                </form>
                             </td>
                         </tr>
                     </c:forEach>
